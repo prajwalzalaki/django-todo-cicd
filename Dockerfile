@@ -12,7 +12,6 @@ COPY . .
 
 # Install dependencies from requirements.txt
 RUN pip install --upgrade pip setuptools wheel
-RUN pip install -r requirements.txt
 
 # Run migrations after installing dependencies
 RUN python manage.py migrate
